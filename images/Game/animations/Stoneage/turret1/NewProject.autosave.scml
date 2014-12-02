@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r1" pixel_mode="1">
+    <folder id="0">
+        <file id="0" name="turret1_catapult.png" width="60" height="31" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="turret1_elastic.png" width="56" height="6" pivot_x="1" pivot_y="0.5"/>
+        <file id="2" name="turret1_stone.png" width="20" height="20" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="3" name="turret1_catapult_basis.png" width="29" height="31" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="4" name="turret1_catapult_wood.png" width="59" height="20" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <entity id="0" name="turret1">
+        <obj_info name="bone_000" type="bone" w="16.3115" h="10"/>
+        <obj_info name="bone_001" type="bone" w="23.4397" h="10"/>
+        <obj_info name="bone_002" type="bone" w="15.7239" h="10"/>
+        <animation id="0" name="idle" length="300" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="4" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="5" key="0"/>
+                    <bone_ref id="2" timeline="6" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" timeline="3" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="1" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="2" key="0" z_index="3"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="turret1_catapult_basis">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="4" y="1" angle="270"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="turret1_catapult_wood">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="3" y="-1" angle="270"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="turret1_elastic_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-3.181869" y="-0.02592" angle="179.461184"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="turret1_stone_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="0.874399" y="-0.793131" angle="0.267735"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="1" y="12" angle="90"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="3.944159" y="-25.818516" angle="90.538816"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="2" name="bone_002" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-15.870683" y="15.797208" angle="359.732265"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="shoot" length="500" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" timeline="2" key="0"/>
+                    <object_ref id="0" parent="0" timeline="3" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" timeline="4" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="5" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="6" key="0" z_index="3"/>
+                </key>
+                <key id="1" time="100">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" timeline="2" key="0"/>
+                    <object_ref id="0" parent="0" timeline="3" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" timeline="4" key="1" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="5" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="6" key="1" z_index="3"/>
+                </key>
+                <key id="2" time="200">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" timeline="2" key="0"/>
+                    <object_ref id="0" parent="0" timeline="3" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" timeline="4" key="2" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="5" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="6" key="2" z_index="3"/>
+                </key>
+                <key id="3" time="300">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" timeline="2" key="0"/>
+                    <object_ref id="0" parent="0" timeline="3" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" timeline="4" key="3" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="5" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="6" key="3" z_index="3"/>
+                </key>
+                <key id="4" time="400">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" timeline="2" key="0"/>
+                    <object_ref id="0" parent="0" timeline="3" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" timeline="4" key="4" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="5" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="6" key="4" z_index="3"/>
+                </key>
+                <key id="5" time="500">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" timeline="2" key="0"/>
+                    <object_ref id="0" parent="0" timeline="3" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" timeline="4" key="5" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="5" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="6" key="5" z_index="3"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="1" y="12" angle="90"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="3.944159" y="-25.818516" angle="90.538816"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="bone_002" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-15.870683" y="15.797208" angle="359.732265"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="turret1_catapult_basis">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="4" y="1" angle="270"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="turret1_stone_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="0.874399" y="-0.793131" angle="0.267735"/>
+                </key>
+                <key id="1" time="100" spin="0">
+                    <object folder="0" file="2" x="7.874323" y="-0.760421" angle="0.267735"/>
+                </key>
+                <key id="2" time="200" spin="0">
+                    <object folder="0" file="2" x="17.874213" y="-0.713692" angle="0.267735"/>
+                </key>
+                <key id="3" time="300" spin="0">
+                    <object folder="0" file="2" x="29.874082" y="-0.657618" angle="0.267735"/>
+                </key>
+                <key id="4" time="400" spin="0">
+                    <object folder="0" file="2" x="43.87393" y="-0.592198" angle="0.267735"/>
+                </key>
+                <key id="5" time="500" spin="0">
+                    <object folder="0" file="2" x="50.873853" y="-0.559488" angle="0.267735"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="turret1_catapult_wood">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="3" y="-1" angle="270"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="turret1_elastic_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-3.181869" y="-0.02592" angle="179.461184"/>
+                </key>
+                <key id="1" time="100" spin="0">
+                    <object folder="0" file="1" x="-3.251723" y="-0.025263" angle="179.461184" scale_x="0.860285"/>
+                </key>
+                <key id="2" time="200" spin="0">
+                    <object folder="0" file="1" x="-3.329353" y="-0.024533" angle="179.461184" scale_x="0.676797"/>
+                </key>
+                <key id="3" time="300" spin="0">
+                    <object folder="0" file="1" x="-3.391501" y="-0.023949" angle="179.461184" scale_x="0.465408"/>
+                </key>
+                <key id="4" time="400" spin="0">
+                    <object folder="0" file="1" x="-3.418094" y="-0.023699" angle="179.461184" scale_x="0.205871"/>
+                </key>
+                <key id="5" time="500" spin="0">
+                    <object folder="0" file="1" x="-3.308333" y="-0.024731" angle="179.461184" scale_x="0.085286"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r1" pixel_mode="1">
+    <folder id="0">
+        <file id="0" name="turret3_without_rock.png" width="105" height="44" pivot_x="0.771429" pivot_y="0.318182"/>
+        <file id="1" name="turret3_rock.png" width="20" height="20" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <obj_info name="bone_000" type="bone" w="28.4934" h="10"/>
+        <obj_info name="bone_001" type="bone" w="22.4704" h="10"/>
+        <animation id="0" name="NewAnimation" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="2" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="3" key="0"/>
+                    <object_ref id="0" parent="1" timeline="1" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="0" key="0" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="turret3_without_rock">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="0.542533" y="2.515639" angle="87.292083" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="turret3_rock">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="0.490784" y="-0.562871" angle="119.197486" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="3.461538" y="14.423077" angle="272.707917" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-14.870331" y="-66.102041" angle="328.094596" scale_x="1"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

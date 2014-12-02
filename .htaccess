@@ -1,0 +1,23 @@
+# ----------------------------------------------------------------------
+# Proper MIME type for all files
+# ----------------------------------------------------------------------
+
+# Audio
+AddType audio/ogg                      		ogg
+AddType audio/mp4                      		m4a
+#AddType audio/webm                     	webm
+
+# Video
+#AddType video/ogg                      	ogv
+#AddType video/mp4                      	mp4 m4v
+#AddType video/webm                     	webm
+
+# Assorted types
+#AddType image/x-icon                       #ico
+
+#Font
+AddType application/x-font-truetype			ttf
+AddType application/x-font-opentype			otf
+AddType application/font-woff				woff
+AddType application/vnd.ms-fontobject		eot
+AddType image/svg+xml						svg
